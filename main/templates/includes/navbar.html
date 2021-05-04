@@ -1,0 +1,56 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<script src="https://kit.fontawesome.com/6f9ada9f39.js" crossorigin="anonymous"></script>
+<section>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-1">
+                <img class="logo-image" src="{% static 'images/logo.jpg' %}" alt="">
+            </div>
+            <div class="col-1 catalog d-flex align-items-center justify-content-center bg-primary text-white">
+                <i class="fas fa-list-ul"></i>
+                <span class="button-span">Button</span>
+            </div>
+            <div class="col-5 p-0 d-flex justify-content-center align-items-center border border-primary">
+                <div class="w-25 h-100 d-flex justify-content-center align-items-center bg-light">
+                    <span class="vezde" >Везде </span>
+                    <i class='fas fa-caret-down' style='font-size:24px'></i>
+                </div>
+                <div class="w-75 h-100 d-flex justify-content-center align-items-center">
+                    <input class="search-input border-0 w-75" type="text" placeholder="Искать на сайте">
+                    <i  class="fa fa-search w-25 bg-primary h-100 text-white search-icon justify-content-center align-items-center d-flex"></i>
+                </div>
+                    
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+                        <span>
+                            <i class="fas fa-sign-in-alt" style='font-size:20px'></i>
+                        </span>
+                        <span>Войти</span>
+                    </div>
+                    <div class="col-3 d-flex flex-column align-items-center justify-content-center"">
+                        <span>
+                            <i class='far fa-file-alt' style='font-size:20px'></i>
+                        </span>
+                        <span>Заказы</span>
+                    </div>
+                    <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+                        <span>
+                            <i class='far fa-heart' style='font-size:20px'></i>
+                        </span>
+                        <span>Избранное</span>
+                    </div>
+                    <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+                        <span>
+                            <i class='fas fa-shopping-basket' style='font-size:20px'></i>
+                        </span>
+                        <span>Корзина</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
